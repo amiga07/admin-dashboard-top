@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif, system-ui;
+    background-color: rgb(250, 247, 247);
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+    background-color: rgb(52, 123, 253);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    grid-row: 1/4;
+}
+.side-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.side-item svg{
+    width: 45px;
+}
+.heading{
+    margin-bottom: 60px;
+    font-size: 25px;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.first-row, .second-row{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.first-row{
+    margin-bottom: 60px;
+}
+.header{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    border: none;
+    background-color: rgb(235, 235, 235);
+    width: max(45vw, 400px);
+    height: 35px;
+    border-radius: 13px;
+    outline: none;
+    padding-left: 30px;
+}
+.name{
+    margin-right: 40px;
+    font-weight: bold;
+}
+.second-header{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.right-header{
+    margin-right: 30px;
+    display: flex;
+    gap: 50px
+}
+button{
+    width: 97px;
+    height: 40px;
+    color: white;
+    background-color: rgb(52, 123, 253);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.left-header{
+    margin-left: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 5fr 1.8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-items: start;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-left: 30px;
+    gap: 30px;
+    grid-row: 1/4;
+}
+.card{
+    height: 300px;
+    background-color: white;
+    padding: 50px 30px 30px 30px;
+    border-left: 10px solid rgb(255, 217, 0);
+    border-radius: 15px;
+    position: relative;
+}
+.left > h2{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 14px;
+}
+.announcements, .trending-card{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    background-color: white;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 15px;
+}
+.anon{
+    border-bottom: 2px solid rgb(231, 231, 231);
+}
+.anon h3{
+    margin-bottom: 5px;
+}
+.anon p{
+    margin-bottom: 10px;
+}
+.announcements-section h2{
+    margin-bottom: 18px;
+}
+.announcements{
+    margin-bottom: 50px;
+}
+.trend > h2{
+    margin-bottom: 18px;
+}
+.left p, .right p{
+    color:rgb(105, 105, 105)
+}
+.sidebar svg{
+    fill: white
+}
+.heading svg{
+    width: 70px;
+}
+.search svg{
+    width: 50px;
+    fill: black;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.ava img{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+.info svg{
+    fill: black;
+    width: 40px;
+}
+.large img{
+    width: 80px;
+    height: 80px;
+}
+.large-header-p{
+    font-size: 20px;
+}
+.tr-card{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.tr-card .nickname{
+    color: black;
+    margin-bottom: 5px;
+}
+.card svg{
+    width: 40px;
+}
+.svgs{
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    gap: 45px;
+    right: 35px;
+
+}
