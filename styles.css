@@ -14,7 +14,6 @@ html{
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr 1fr;
 
 }
 
@@ -25,8 +24,7 @@ html{
     background-color: rgb(52, 123, 253);
     color: white;
     font-weight: bold;
-    font-size: 20px;
-    grid-row: 1/4;
+    font-size: clamp(15px, 1.5vw, 22px);
 }
 .side-item{
     display: flex;
@@ -38,11 +36,12 @@ html{
 }
 .heading{
     margin-bottom: 60px;
-    font-size: 25px;
+    font-size: clamp(17px, 2vw, 29px);
     margin-top: 13px;
     display: flex;
     align-items: center;
     gap: 15px;
+    padding-right: 30px;
 }
 .first-row, .second-row{
     display: flex;
@@ -59,6 +58,7 @@ html{
     height: 80px;
     align-items: center;
     justify-content: space-between;
+
 }
 input{
     border: none;
@@ -80,11 +80,16 @@ input{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 35px;
+
 }
 .right-header{
     margin-right: 30px;
     display: flex;
     gap: 50px
+}
+.headers, .sidebar, .card, .announcements, .trending-card{
+    box-shadow: 0px 0px 17px 4px rgba(34, 60, 80, 0.2);
+
 }
 button{
     width: 97px;
@@ -99,6 +104,14 @@ button{
     font-weight: bold;
     font-size: 17px;
 }
+button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.header svg:hover, .card svg:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
 .left-header{
     margin-left: 40px;
     font-weight: bold;
@@ -109,16 +122,15 @@ button{
 .main-content{
     display: grid;
     grid-template-columns: 5fr 1.8fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 40px;
     justify-items: start;
+    margin-bottom: 50px;
 }
 .card-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin-left: 30px;
     gap: 30px;
-    grid-row: 1/4;
 }
 .card{
     height: 300px;
